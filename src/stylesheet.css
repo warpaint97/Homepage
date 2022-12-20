@@ -1,0 +1,93 @@
+html {
+	color: black;
+	font-family: monospace;
+	font-size: 15px;
+}
+
+body {
+	margin: 0;
+	font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+
+#sidenav {
+	overflow: hidden;
+	background-color: #303030;
+	position: fixed;
+	left: 0;
+	width: 150px;
+	height: 100%;
+}
+
+#sidenav * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #f2f2f2;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#sidenav a {
+	padding-left: 10px;
+	padding-right: 120px;
+}
+
+#sidenav a:hover {
+	background-color: #d0d0d0;
+	color: black;
+}
+
+#topnav {
+	padding-left: 102px;
+	overflow: hidden;
+	background-color: #303030;
+}
+
+#logo * {
+	float: left;
+	width:48px;
+	height:48px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	background-color: #303030;
+}
+
+#logo img {
+	margin-left: 45px;
+}
+
+
+#topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#topnav a:hover {
+	background-color: #d0d0d0;
+	color: black;
+}
+
+#topnav a.active {
+	background-color: #d0d0d0;
+	color: black;
+}
+
+#content {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: #c000c0;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
