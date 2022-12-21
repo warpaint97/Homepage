@@ -167,6 +167,10 @@ div.navbar ul li:hover::after {
 	width: 100%;
 }
 
+div.navbar ul li.active::after {
+	width: 100%;
+}
+
 div.navbar ul li a:hover {
 	color: #c8c;
 }
