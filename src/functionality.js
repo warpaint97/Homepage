@@ -1,3 +1,4 @@
+// manage welcome text in the top navbar
 const logo_elem = document.getElementById("logo");
 const welcome_elem = document.getElementById("welcome_text");
 
@@ -32,10 +33,17 @@ function addLetter() {
     }
 }
 
+// manage sidebar button
 var sidebarOpen = true;
 const sidebar_button = document.getElementById("sidebar_button");
 const sidebar = document.getElementById("fullsidebar");
-sidebar.style.animation = "open_sidebar 0.2s ease-out 0s 1 normal forwards";
+
+if (getCookie("sidebarOpen") == "false") {
+    sidebarOpen = false;
+    sidebar_button.src = (!sidebarOpen) ? "img/menu.png" : "img/exit.png";
+} else {
+    sidebar.style.animation = "open_sidebar 0.2s ease-out 0s 1 normal forwards";
+}
 sidebar_button.addEventListener("mousedown", (event) => {
     sidebar_button.src = (sidebarOpen) ? "img/menu.png" : "img/exit.png";
     if (sidebarOpen) {
@@ -44,4 +52,5 @@ sidebar_button.addEventListener("mousedown", (event) => {
         sidebar.style.animation = "open_sidebar 0.2s ease-out 0s 1 normal forwards";
     }
     sidebarOpen = !sidebarOpen;
+    setCookie("sidebarOpen", sidebarOpen, 31);
 }, false);
