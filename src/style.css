@@ -29,7 +29,7 @@ ul {
 /* Animations */
 @keyframes close_sidebar {
 	0% {
-		width: 15%;
+		width: 20%;
 	}
 	100% {
 	  width: 0%;
@@ -40,7 +40,7 @@ ul {
 		width: 0%;
 	}
 	100% {
-		width: 15%;
+		width: 20%;
 	}
 }
 
@@ -52,12 +52,6 @@ ul {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-@media (max-width: 1000px) {
-    .pc_only {
-        display:none;
-    }
 }
 
 .center {
@@ -96,7 +90,7 @@ div.fulltopbar::after {
 
 div.topbar {
 	position: relative;
-	width: 50%;
+	width: 55%;
 }
 
 #logo {
@@ -184,6 +178,7 @@ div.navbar ul li a:hover {
 	width: 0%;
 	height: 110%;
 	padding: 0;
+	margin-top: 50px;
 	display: flex;
 	z-index: 0;
 	padding: 3% 0;
@@ -244,7 +239,7 @@ div.navbar ul li a:hover {
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5% 3%;
+	padding: 70px 3%;
 	text-align: left;
 	z-index: -1;
 }
@@ -253,4 +248,17 @@ div.navbar ul li a:hover {
 	margin: 20px auto;
 	font-weight: 100;
 	line-height: 25px;
+}
+
+/* for mobile devices */
+@media (max-width: 1000px) {
+    .pc_only {
+        display:none;
+    }
+	div.topbar {
+		width: 83%;
+	}
+	#content {
+		width: 80%;
+	}
 }
