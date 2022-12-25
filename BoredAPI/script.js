@@ -6,7 +6,7 @@ Object.defineProperty(String.prototype, 'capitalize', {
   });
 
 async function getData() {
-    const response = await fetch('http://www.boredapi.com/api/activity/')
+    const response = await fetch('https://www.boredapi.com/api/activity/')
     const data = await response.json()
     const card = document.createElement('div')
     card.setAttribute('class', 'card')
